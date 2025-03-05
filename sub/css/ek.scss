@@ -1,0 +1,117 @@
+.myftresult{
+    .section_list ul{
+        a span{
+            background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/makeplan.svg");
+        }
+        .active a span{
+            background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_makeplan.svg");
+        }
+    }
+    list-style: none;
+    width: 1180px;
+    height: 978px;
+    padding: 40px 0 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.result li{
+    width: 340px;
+    height: 200px;
+    border: none;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+ul.result span{
+    font-size: var(--medium-text);
+}
+.result_bt li{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    gap: 10px;
+    font-size: var(--semismall-text);
+}
+.restart{
+    border: 1px solid;
+    border-color: #0051D3;
+    background-color: rgba(255, 255, 255, 1);
+    color: #0051D3;
+}
+.save{
+    background-color: #0051D3;
+    color: #FFDA00;
+}
+.share{
+    background-color: #FFDA00;
+    color: #0051D3;
+}
+
+.login_bt{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #0051D3;
+    color: #FFDA00;
+    font-size: var(--medium-text);
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-list li {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.review-info {
+    width: 100%;
+}
+
+.nickname {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.review-title {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.review-btn {
+    padding: 8px 15px;
+    background: #0051D3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}

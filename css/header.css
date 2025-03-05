@@ -59,6 +59,7 @@
   right: 0;
   z-index: 100;
   background-color: white;
+  border-bottom: var(--trip-gray2) 1px solid;
   width: 100%;
   transition: height 0.3s;
 }
@@ -75,7 +76,6 @@
 body.scrolled #gnbbox {
   top: 0;
   height: 40px;
-  border-bottom: var(--trip-gray2) 1px solid;
 }
 body.scrolled #gnbbox .logo img {
   width: 0;
@@ -96,15 +96,19 @@ body.scrolled #gnb {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -5px;
+  bottom: 0;
   opacity: 0;
   width: 100%;
   height: 2px;
-  background: #0051D3;
+  background: var(--trip-blue);
   transform: translateX(-50%);
-  transition: opacity 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+#menu a:hover {
+  color: var(--trip-blue);
 }
 #menu a:hover::after {
+  bottom: -5px;
   opacity: 1;
 }
 
@@ -247,7 +251,7 @@ body.scrolled #gnb {
 }
 #hb-list div ul {
   margin-bottom: 30px;
-  row-gap: px;
+  row-gap: 8px;
 }
 #hb-list .feelter {
   margin-bottom: 40px;

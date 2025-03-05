@@ -1,0 +1,106 @@
+//로그인 페이지
+#userLogin{
+  
+
+    .container_m {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }      
+    h3 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        
+       
+        span {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    form{
+        align-items: center;
+            fieldset{
+                width: 100%;
+                border: none;
+                margin-bottom: 15px;
+                text-align: left;
+                    label{
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        }
+                    input{
+                        width: 100%;
+                        padding: 10px;
+                        border-bottom: 1px solid black;
+                        font-size: 14px;
+                            &:placeholder{ color: var(--Trip-blue, #0051D3) };
+                        }
+                    }
+            }
+            
+    .findInfo {
+        width: 100%;
+        text-align: right;
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    
+        a {
+        text-decoration: none;
+        }
+    }
+    .btn_wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+            button{
+                width: 100%;
+                padding: 12px 0;
+                font-size: 16px;
+                border-radius: 5px;
+                background-color: var(--Trip-blue, #0051D3);
+                color: white;
+                text-align: center;
+                cursor: pointer;}
+            a{
+                width: 100%;
+                padding: 12px 0;
+                font-size: 16px;
+                color: var(--Trip-blue, #0051D3);
+                border: 1px solid var(--Trip-blue, #0051D3);
+                border-radius: 5px;
+                background-color: white;
+                text-align: center;
+                cursor: pointer;}
+    }
+    .sns_login {
+        margin-top: 30px;
+      
+        h4 {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      
+        ul {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+      
+          li {
+            width: 40px;
+            height: 40px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+          }
+        }
+      }
+
+}
+
+
+

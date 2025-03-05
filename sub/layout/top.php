@@ -25,28 +25,16 @@
     <!-- 작업용 -->
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/header.min.css" >
-    <link rel="stylesheet" href="/css/ek.min.css">
     <link rel="stylesheet" href="/css/yujin.min.css">
-    <link rel="stylesheet" href="/css/dahye.min.css">
+
+    <!-- 서브 스타일 -->
+    <link rel="stylesheet" href="/sub/css/subglobal.min.css">
+    <link rel="stylesheet" href="/sub/css/hyo.min.css">
+    <link rel="stylesheet" href="/sub/css/yujin.min.css">
+    <link rel="stylesheet" href="/sub/css/dahye.min.css">
 
 </head>
 <body>
-    
-        <div id="mb-top" class="d-flex mb " >
-            
-              <div class="container d-flex">
-                   <div id="mb-top-text">
-                      <h5>오직 나만을 위한 Trip:ter
-                         <span class="d-block">앱으로 쿠폰 받기</span>
-                      </h5>
-                    </div> 
-                    <a href="http://">앱에서 보기>
-                    </a>  
-              </div>
-            <button class="close-btn abs align-items-start">
-                <img src="https://trip-ter.vercel.app/img/icon/x-01_mb.svg" alt="닫기...">
-            </button>    
-        </div>
 
     <!-- 상단 -->
        <header id="hd">
@@ -93,7 +81,7 @@
                             </form>
                         </li>
                         <li>
-                            <button class="wishlist-btn p-0"><a href="#none"><img src="https://trip-ter.vercel.app/img/icon/heart.svg" alt=""></a></button>
+                        <button class="wishlist-btn p-0"><a href="#none"><img src="https://trip-ter.vercel.app/img/icon/travel_bl.svg" alt="찜"></a></button>
                         </li>
                     </ul>
                 </div>
@@ -155,10 +143,15 @@
                 </div>
                 <!-- 메뉴리스트 -->
                 <div id="hb-list" class="d-flex flex-column">
-                    <div class="feelter"><a class="d-flex align-items-center" href="/page/tripRoute.php?tab=myfeelter">
-                        <span class="color-active-blue">MY FEEL:TER 설정</span>
-                        <img class="d-block arrow" src="https://trip-ter.vercel.app/img/icon/arrow-right_bl.svg" alt=""></a>
-                    </div>
+                    <ul class="tapPart d-flex flex-column">
+                        <li class="feelter"><a class="d-flex align-items-center" href="/page/tripRoute.php?tab=myfeelter">
+                            <span class="color-active-blue">MY FEEL:TER</span>
+
+                        </li>
+                        <li class="planner"><a class="d-flex align-items-center" href="#none">
+                            <span class="color-active-blue">계획짜기</span>
+                        </li>
+                    </ul>
                     <div class="d-flex flex-column scroll">
                         <ul class="d-flex communitymenu flex-wrap">
                             <li><a class="mbrecomm" href="">MD추천</a></li>
@@ -170,8 +163,7 @@
                             <li><a class="friendfind" href="">동행 구해요</a></li>
                         </ul>
                         <ul class="d-flex communitymenu flex-wrap">                        
-                            <li><a class="couponpack color-active-blue" href="">트립터 쿠폰팩</a></li>
-                            <li><a class="thismonths" href="">이달의 기획전</a></li>
+                            <li><a class="event" href="">이벤트</a></li>
                         </ul>
 
                         <ul id="hb-sublist">  
@@ -195,12 +187,10 @@
                             <li>
                                 <div><a class="" href="">티켓&투어</a></div>
                                 <ul id="ticket" class="sublist d-flex flex-wrap">
+                                    <li><a class="allPass color-active-blue" href="#none">올패스권</a></li>
                                     <li><a href="#none">현지투어</a></li>
                                     <li><a href="#none">테마파크</a></li>
-                                    <li><a href="#none">박물관/미술관</a></li>
-                                    <li><a href="#none">전망대/케이블카</a></li>
-                                    <li><a href="#none">올패스권</a></li>
-                                    <li><a href="#none">유람선/크루즈</a></li>
+                                    <li><a href="#none">전시체험</a></li>
                                     <li><a href="#none">철도여행</a></li>
                                 </ul>
                             </li>

@@ -42,6 +42,7 @@
     --trip-white : rgba(255, 255, 255, 1);
     --trip-gray1: rgba(181, 181, 181, 1);
     --trip-gray2: rgba(217, 217, 217, 1);
+    --trip-gray3: #777777;
     --trip-black: rgba(17, 17, 17, 1);
     --trip-skyblue: rgba(171, 198, 240, 1);
 
@@ -80,6 +81,11 @@ body{
 .container{
     max-width: 1440px;
     padding: 0 20px;
+    margin: auto;
+}
+.container_m{
+    max-width: 768px;
+    padding: 0 10px;
     margin: auto;
 }
 
@@ -167,6 +173,11 @@ flex-direction: column;
 .w-0{
     width: 0;   
 }
+
+.gap-2{
+    gap: 1rem;
+}
+
 .gap-3{
     gap: 1.5rem;
 }
@@ -199,3 +210,9 @@ flex-direction: column;
     order: 3;
 }
 
+@media (min-width: 769px) {
+    .mb{display: none !important;}
+}
+@media only screen and (max-width: 768px){
+    .pc{display: none !important;}
+}

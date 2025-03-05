@@ -1,5 +1,5 @@
 #ft {
-  background-color: #eaeaea;
+  background-color: var(--trip-gray2);
   width: 100%;
   height: 380px;
   display: flex;
@@ -117,7 +117,6 @@
     font-size: var(--m-small-text);
   }
 }
-#ft > div .d-flex .company_info b,
 #ft > div .d-flex .company_info i,
 #ft > div .d-flex .company_id i {
   margin-bottom: 8px;

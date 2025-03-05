@@ -1,0 +1,117 @@
+
+//.myfeelterSect $sectionId = id = myfeelter > #myfellterForm > #answerBox = .table2
+
+#myfeelter {
+    .question_info{
+        padding: 20px 0 40px 0;
+        .back_btn{
+            width: 32px; height: 32px;
+            background: url("https://trip-ter.vercel.app/img/icon/arrow-left_black.svg") no-repeat center/contain;
+            cursor: pointer;
+            &.none-active{
+                background-image: url("https://trip-ter.vercel.app/img/icon/arrow-left_gray.svg");
+                cursor: default;
+            }
+        }
+    }
+    fieldset .d-flex{
+        flex-wrap: wrap; gap: 20px;
+    }
+    //질문
+    legend{
+        font-size: var(--medium-text);
+        font-weight: 600;
+        margin-bottom: 40px;
+        span{
+            color: var(--trip-blue);
+            font-size: var(--big-text);
+            font-weight: 700;
+        }
+    }
+    //보기
+    .answerBox{
+        padding: 0 24px;
+        label{
+            position: relative;
+            border-radius: 20px;
+            background:url('http://trip-ter.vercel.app/img/myfeelterimage/1-1.jpg') no-repeat center/cover;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                right:0;
+                top:0;
+                bottom:0;
+                background-color: rgba(255,255,255,.8);
+            }
+            &:hover{
+                &::before {
+                    background-color: transparent;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease-in;
+                }
+                span{
+                    opacity: 0;
+                }    
+            }
+            span{
+                position: relative;
+                font-size: var(--semismall-text);
+            }
+        }
+    }
+
+    .table2{
+        label{
+            width: calc(50% - 10px);
+            height: 200px;
+        }
+    }
+    .table3{
+        label{
+            width:220px;
+            height: 200px;
+        }
+    }
+}
+
+//.myfeelterSect $sectionId = id = myfeelter > #myfellterForm > #answerBox = .table2
+@media only screen and (max-width: 768px) {
+    #myfeelter {
+        .questionBox{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 20px 0;
+        }
+        .answerBox {
+        label{
+                background-image: none !important;
+                border: 2px solid var(--trip-blue);
+                border-radius: 25px 5px 5px 25px;
+                height: 50px;
+                width: 100%;
+                &::before {
+                    content: none;
+                }
+                &:hover{
+                        background-color: var(--trip-skyblue);
+                        cursor: pointer;
+                        transition: background-color 0.3s ease-in;
+                        span{
+                            opacity: 1;
+                        }
+                } 
+        }
+    }  
+    } 
+}
+@media only screen and (max-width: 575px){
+    #myfeelter {
+        legend{
+            font-size: var(--small-text);
+            span{
+                font-size: inherit
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
   <?php include_once("./layout/top.php"); ?>
     
     <main id="section_wrap">
-    <!-- section1 -->
+        <!-- section1 -->
         <div class="section section1">
             <div id="main_slide" class="rel">
                 <div class="swiper main_swiper">
@@ -49,32 +49,43 @@
                             <fieldset class="filset1">
                                 <legend>나의 여행 스타일은?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input class="mftr_btn" type="button" value="계획형">
-                                    <input class="mftr_btn" type="button" value="즉흥형">
-                                    <input class="mftr_btn" type="button" value="아무거나">
+                                    <input id="qna1-1" class="d-none" type="radio" name="qna1" value="계획형">
+                                    <label class="mftr_btn" for="qna1-1">계획형</label>
+                                    <input id="qna1-2" class="d-none" type="radio" name="qna1" value="즉흥형">
+                                    <label class="mftr_btn" for="qna1-2">즉흥형</label>
+                                    <input id="qna1-3" class="d-none" type="radio" name="qna1" value="아무거나">
+                                    <label class="mftr_btn" for="qna1-3">아무거나</label>
                                 </div>
                             </fieldset>
                             <fieldset class="filset2">
                                 <legend>여행지 선택의 1순위는?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input class="mftr_btn" type="button" value="음식" >
-                                    <input class="mftr_btn" type="button" value="액티비티">
-                                    <input class="mftr_btn" type="button" value="호텔">
-                                    <input class="mftr_btn" type="button" value="관광명소">
+                                    <input id="qna2-1" class="d-none" type="radio" name="qna2" value="음식">
+                                    <label class="mftr_btn" for="qna2-1">음식</label>
+                                    <input id="qna2-2" class="d-none" type="radio" name="qna2" value="액티비티">
+                                    <label class="mftr_btn" for="qna2-2">액티비티</label>
+                                    <input id="qna2-3" class="d-none" type="radio" name="qna2" value="호텔">
+                                    <label class="mftr_btn" for="qna2-3">호텔</label>
+                                    <input id="qna2-4" class="d-none" type="radio" name="qna2" value="관광명소">
+                                    <label class="mftr_btn" for="qna2-4">관광명소</label>
                                 </div>
                             </fieldset>
                             <fieldset class="filset3">
                                 <legend>나의 여행 스타일은?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input class="mftr_btn" type="button" value="짧게 여러 번">
-                                    <input class="mftr_btn" type="button" value="길게 한 번에">
+                                    <input id="qna3-1" class="d-none" type="radio" name="qna3" value="짧게 여러 번">
+                                    <label class="mftr_btn" for="qna3-1">짧게 여러 번</label>
+                                    <input id="qna3-2" class="d-none" type="radio" name="qna3" value="길게 한 번에">
+                                    <label class="mftr_btn" for="qna3-2">길게 한 번에</label>
                                 </div>
                             </fieldset>
                             <fieldset class="filset4">
                                 <legend>나의 여행 스타일은?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input class="mftr_btn" type="button" value="가성비">
-                                    <input class="mftr_btn" type="button" value="여행은 플렉스">
+                                    <input id="qna4-1" class="d-none" type="radio" name="qna4" value="가성비">
+                                    <label class="mftr_btn" for="qna4-1">가성비</label>
+                                    <input id="qna4-2" class="d-none" type="radio" name="qna4" value="여행은 플렉스">
+                                    <label class="mftr_btn" for="qna4-2">여행은 플렉스</label>
                                 </div>
                             </fieldset>
                         </div>
@@ -246,6 +257,7 @@
             </div>
         </div>
     </main>
+
 
 
 

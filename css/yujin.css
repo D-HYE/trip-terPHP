@@ -37,7 +37,7 @@ body.scrolled #quick {
   justify-content: space-between;
   padding: 10px;
   position: relative;
-  background: url(.https://trip-ter.vercel.app/img/logo/logo_TRT_bl.png) no-repeat center;
+  background: url("https://trip-ter.vercel.app/img/logo/logo_TRT_bl.png") no-repeat center;
   background-size: cover;
 }
 #mb-top .container {
