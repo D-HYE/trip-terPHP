@@ -1,5 +1,5 @@
 #myfeelter .question_info {
-  margin-bottom: 40px;
+  padding: 20px 0 40px 0;
 }
 #myfeelter .question_info .back_btn {
   width: 32px;
@@ -63,11 +63,119 @@
   height: 200px;
 }
 
+#planmakerType1 .wishlist_quick .wishlist_icon {
+  background: url("https://trip-ter.vercel.app/img/icon/bag-03.svg") no-repeat center/cover;
+}
+#planmakerType1 .plan_info {
+  background-color: var(--trip-blue);
+  padding: 10px 20px;
+  border-radius: 30px;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+#planmakerType1 .plan_info ul li {
+  font-size: var(--semismall-text);
+  color: var(--trip-white);
+  padding: 8px;
+}
+#planmakerType1 .plan_info ul li a {
+  font-size: var(--semismall-text);
+  color: var(--trip-white);
+}
+#planmakerType1 .plan_info .plan_edit {
+  flex-grow: 1;
+}
+#planmakerType1 .tab_content ul li {
+  border: 1px solid var(--trip-blue);
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+#planmakerType1 .tab_content ul li a {
+  font-size: var(--small-text);
+  color: var(--trip-blue);
+}
+#planmakerType1 .tab_content ul li.tripcar_tab {
+  border: 1px solid #FF7F50;
+}
+#planmakerType1 .tab_content ul li.tripcar_tab a {
+  color: #FF7F50;
+}
+#planmakerType1 .tab_content ul li.tabClick {
+  background-color: var(--trip-blue);
+}
+#planmakerType1 .tab_content ul li.tabClick a {
+  color: var(--trip-yellow);
+}
+#planmakerType1 .tab_content ul li.tripcar_tab.tabClick {
+  background-color: #3EB489;
+  border: 1px solid #3EB489;
+}
+#planmakerType1 .tab_content ul li.tripcar_tab.tabClick a {
+  color: var(--trip-white);
+}
+#planmakerType1 .plane_title {
+  margin: 40px 0 20px 0;
+}
+#planmakerType1 .plane_title .plane_title_all {
+  font-size: var(--mediumbig-text);
+  font-weight: 700;
+}
+#planmakerType1 .plane_title .before_btn,
+#planmakerType1 .plane_title .front_btn {
+  padding: 10px 12px;
+  border-radius: 20px 5px 5px 20px;
+}
+#planmakerType1 .plane_title .before_btn a,
+#planmakerType1 .plane_title .front_btn a {
+  font-size: var(--semismall-text);
+  font-weight: 700;
+}
+#planmakerType1 .plane_title .before_btn {
+  background-color: var(--trip-gray1);
+  padding-right: 24px;
+}
+#planmakerType1 .plane_title .before_btn a {
+  color: var(--trip-gary3);
+}
+#planmakerType1 .plane_title .front_btn {
+  background-color: var(--trip-blue);
+  border-radius: 5px 20px 20px 5px;
+  padding-left: 24px;
+}
+#planmakerType1 .plane_title .front_btn a {
+  color: var(--trip-yellow);
+}
+
 @media only screen and (max-width: 768px) {
-  #myfeelter label {
+  #myfeelter .questionBox {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+  #myfeelter .answerBox label {
     background-image: none !important;
-    border: 1px solid var(--trip-blue);
+    border: 2px solid var(--trip-blue);
     border-radius: 25px 5px 5px 25px;
     height: 50px;
+    width: 100%;
+  }
+  #myfeelter .answerBox label::before {
+    content: none;
+  }
+  #myfeelter .answerBox label:hover {
+    background-color: var(--trip-skyblue);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+  }
+  #myfeelter .answerBox label:hover span {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #myfeelter legend {
+    font-size: var(--small-text);
+  }
+  #myfeelter legend span {
+    font-size: inherit;
   }
 }

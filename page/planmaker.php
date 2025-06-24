@@ -13,12 +13,16 @@
         </div>
     </div>
     <div class="section_list">
-        <ul class="d-flex justify-content-center container_m">
+        <ul class="d-flex justify-content-center container_m flex-wrap">
             <li><a href="./tripRoute.php?tab=myfeelter" class="d-flex">MY FEEL:TER<span></span></a></li>
             <li class="active"><a href="./tripRoute.php?tab=planmaker" class="d-flex">계획짜기<span></span></a></li>
         </ul>
     </div>
+    <div>
+
+
+    </div>
     <p class="ddd d-flex justify-content-center align-items-center">
-        계획짜기 페이지~~~
+        
     </p>
 </section>

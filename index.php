@@ -106,8 +106,8 @@
             </div>
             <div class="promo_banner">
                 <a href="#none" class="d-flex justify-content-center align-items-center">
-                    <img src="https://trip-ter.vercel.app/img/illustrator/event.jpg" alt="여름 성수기 이벤트" class="pc">
-                    <img src="https://trip-ter.vercel.app/img/illustrator/event_mb.jpg" alt="여름 성수기 이벤트" class="mb">
+                    <img src="https://trip-ter.vercel.app/img/banner/event.jpg" alt="여름 성수기 이벤트" class="pc">
+                    <img src="https://trip-ter.vercel.app/img/banner/event_mb.jpg" alt="여름 성수기 이벤트" class="mb">
                 </a>
             </div>
             <div class="mb icon_menu">
@@ -161,7 +161,7 @@
         <div class="section section3">
             <div id="trt_info" class="container d-flex justify-content-center align-items-end">
                 <div class="img_box d-flex justify-content-center align-items-end  pc">
-                    <img src="https://trip-ter.vercel.app/img/main_img/trtillustrator.png" alt="당신을 위한 플랫폼">
+                    <img src="https://trip-ter.vercel.app/img/illustrator/trtillustrator.png" alt="당신을 위한 플랫폼">
                 </div>
                 <div class="txt_box">
                     <h3>J이고 싶은 P, <span>당신을 위한 플랫폼</span></h3>
@@ -217,7 +217,7 @@
            <div class="container">
                 <ul class="d-flex justify-content-between">
                     <li class="img_box">
-                        <img src="https://trip-ter.vercel.app/img/illustrator/coupon_event.jpg" alt="트립터 후기 이벤트">
+                        <img src="https://trip-ter.vercel.app/img/banner/coupon_event.jpg" alt="트립터 후기 이벤트">
                     </li>
                     <li>
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/s5YtOodFQZY?si=zqrrEUOKmJgJzv2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

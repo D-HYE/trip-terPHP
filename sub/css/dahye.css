@@ -1,3 +1,159 @@
+.page_login .section_banner {
+  height: 246px;
+  margin-bottom: 40px;
+  background-image: url("https://trip-ter.vercel.app/img/banner/banner_img1.jpg");
+}
+.page_login .signup_area {
+  max-width: 500px;
+}
+.page_login .signup_area .signup_tab li {
+  padding: 0 54px;
+  font-family: var(--theJamsil-medium);
+  font-size: var(--small-text);
+  color: var(--trip-white);
+  line-height: 60px;
+  background: var(--trip-gray1);
+}
+.page_login .signup_area .signup_tab li:first-child {
+  border-radius: 30px 5px 5px 30px;
+}
+.page_login .signup_area .signup_tab li:last-child {
+  border-radius: 5px 30px 30px 5px;
+}
+.page_login .signup_area .signup_tab li.active {
+  background: var(--trip-skyblue);
+}
+.page_login .signup_area .signup_step1 {
+  padding: 60px 0;
+}
+.page_login .signup_area .signup_step1 h5 {
+  margin-bottom: 40px;
+}
+.page_login .signup_area .signup_step1 h5 span {
+  font-size: var(--semismall-text);
+  font-family: var(--theJamsil-medium);
+}
+.page_login .signup_area .signup_step1 h6 {
+  margin-bottom: 20px;
+  font-size: var(--small-text);
+  font-family: var(--theJamsil-regular);
+}
+.page_login .signup_area .signup_step1 fieldset {
+  margin-top: 12px;
+}
+.page_login .signup_area .signup_step1 fieldset div {
+  display: none;
+  height: 70px;
+  margin: 16px 0 8px 36px;
+  padding: 16px;
+  background: var(--trip-gray2);
+  border: 1px solid var(--trip-gray3);
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+.page_login .signup_area .signup_step1 fieldset div p {
+  font-size: var(--desc-text);
+  line-height: 1.6;
+}
+.page_login .signup_area .signup_step1 fieldset input[type=checkbox]:checked + span + div {
+  display: block;
+}
+.page_login .signup_area .signup_step1 fieldset span {
+  font-size: var(--small-text);
+}
+.page_login .signup_area .signup_step1 .option_checkbox {
+  margin-top: 40px;
+}
+.page_login .signup_area .signup_step2 {
+  padding: 40px 0;
+}
+.page_login .signup_area .signup_step2 fieldset {
+  margin-bottom: 40px;
+}
+.page_login .signup_area .signup_step2 fieldset .fieldset_tit {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: var(--small-text);
+  font-family: var(--theJamsil-medium);
+}
+.page_login .signup_area .signup_step2 fieldset input:not([type=checkbox]) {
+  display: block;
+  width: 100%;
+  padding: 4px;
+  font-size: var(--desc-text);
+  line-height: 24px;
+  outline: none;
+  border-bottom: 1px solid var(--trip-black);
+}
+.page_login .signup_area .signup_step2 fieldset button {
+  display: block;
+  margin-left: 20px;
+  padding: 0 20px;
+  font-size: var(--small-text);
+  font-family: var(--theJamsil-medium);
+  line-height: 40px;
+  white-space: nowrap;
+  background: var(--trip-gray1);
+  border-radius: 5px;
+}
+.page_login .signup_area .signup_step2 fieldset button:hover {
+  background: var(--trip-blue);
+  color: var(--trip-white);
+}
+.page_login .signup_area .signup_step2 fieldset.fieldset4 span {
+  display: block;
+  margin: 0 10px;
+  font-size: var(--semismall-text);
+}
+.page_login .signup_area .signup_step2 fieldset.fieldset7, .page_login .signup_area .signup_step2 fieldset.fieldset8 {
+  margin-bottom: 20px;
+}
+.page_login .signup_area .submit_btn {
+  display: block;
+  width: 100%;
+  background: var(--trip-gray1);
+  font-size: var(--semismall-text);
+  font-family: var(--theJamsil-medium);
+  line-height: 60px;
+  border-radius: 5px;
+}
+.page_login .signup_area .submit_btn:hover, .page_login .signup_area .submit_btn.active {
+  background: var(--trip-blue);
+  color: var(--trip-white);
+}
+.page_login .signup_result {
+  text-align: center;
+}
+.page_login .signup_result .img_box img {
+  max-width: 400px;
+}
+.page_login .signup_result h3 {
+  margin: 32px 0;
+  font-size: var(--semibig-text);
+  font-family: var(--theJamsil-medium);
+}
+.page_login .signup_result h3 span {
+  font-family: var(--theJamsil-medium);
+  color: var(--trip-black);
+}
+.page_login .signup_result p {
+  font-size: var(--medium-text);
+  font-weight: 500;
+}
+.page_login .signup_result .btn_wrap {
+  margin-top: 60px;
+}
+.page_login .signup_result .btn_wrap a {
+  display: block;
+  width: 244px;
+  line-height: 40px;
+  color: var(--trip-white);
+  font-size: var(--semismall-text);
+  background: var(--trip-blue);
+  border-radius: 5px;
+}
+
 .page_plan .section_list ul li:last-child a span {
   background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/makeplan.svg");
 }
@@ -23,26 +179,41 @@
 .page_triptalk .section_list ul li:nth-child(3).active a span {
   background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_accompany.svg");
 }
-.page_triptalk .board_area li {
-  margin-bottom: 10px;
+.page_triptalk .icon_box {
+  width: 24px;
+  height: 24px;
+  background: url("https://trip-ter.vercel.app/img/icon/list.svg") no-repeat center/contain;
+  text-indent: -10000px;
 }
-.page_triptalk .board_area li span {
-  display: block;
-  padding: 4px 8px;
+.page_triptalk .board_filter .icon1.active {
+  background-image: url("https://trip-ter.vercel.app/img/icon/list_active.svg");
 }
-.page_triptalk .board_area li span.post_num {
-  min-width: 80px;
-  border-right: 1px solid var(--trip-gray1);
+.page_triptalk .board_filter .icon2 {
+  background-image: url("https://trip-ter.vercel.app/img/icon/gallery_list.svg");
 }
-.page_triptalk .board_area li span.post_tit {
-  flex: 1;
-  font-weight: bold;
+.page_triptalk .board_filter .icon2.active {
+  background-image: url("https://trip-ter.vercel.app/img/icon/gallery_list_active.svg");
 }
-.page_triptalk .board_area li span.post_user {
-  min-width: 100px;
+.page_triptalk .board_findPlan .board_filter {
+  border-bottom: 1px solid var(--trip-gray1);
+}
+.page_triptalk .board_findFriend .board_list table .post_id {
+  width: 8.021%;
+}
+.page_triptalk .board_findFriend .board_list table .post_tit {
+  max-width: 400px;
+}
+.page_triptalk .board_findFriend .board_list table .post_nickname {
+  width: 16.0428%;
+}
+.page_triptalk .board_findFriend .board_list table .post_date {
+  width: 12.032%;
+}
+.page_triptalk .board_findFriend .board_list table .post_view {
+  width: 6.684%;
+}
+.page_triptalk .board_findFriend .board_list table tbody tr td.post_id, .page_triptalk .board_findFriend .board_list table tbody tr td.post_date, .page_triptalk .board_findFriend .board_list table tbody tr td.post_view {
   color: var(--trip-gray3);
-  text-align: center;
-  border-left: 1px solid var(--trip-gray1);
 }
 .page_triptalk .view_area h3 {
   padding: 16px 0;
@@ -61,20 +232,4 @@
   padding: 20px 8px;
   min-height: 500px;
   line-height: 1.6;
-}
-
-.page_login .section_banner {
-  height: 246px;
-  margin-bottom: 60px;
-}
-.page_login .signup_tab li {
-  padding: 0 54px;
-  font-family: var(--theJamsil-medium);
-  font-size: var(----semismall-text);
-  color: var(--trip-white);
-  line-height: 70px;
-  background: var(--trip-gray1);
-}
-.page_login .signup_tab li.active {
-  background: var(--trip-skyblue);
 }

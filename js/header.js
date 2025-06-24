@@ -105,3 +105,147 @@ body.addEventListener('click', (e)=>{
 //     loginSection.style.display = "block";
 //     loggedInSection.classList.add("d-none");
 // }
+
+//range 필터
+var slider = document.getElementById('sliderbar_go');
+
+    noUiSlider.create(slider, {
+        start: [0, 100],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
+var slider = document.getElementById('sliderbar_back');
+
+    noUiSlider.create(slider, {
+        start: [0, 100],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
+
+
+document.addEventListener("DOMContentLoaded", async function () {
+    const airplaneArea = document.getElementById("airplaneArea");
+
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]]; // Swap
+        }
+    }
+
+    try {
+        const response = await fetch("../data/airplaneInfo.json");
+        if (!response.ok) throw new Error(`HTTP 오류! 상태: ${response.status}`);
+
+        const flightData = await response.json();
+        let html = "";
+
+        let roundTripFlights = flightData.flightproduct.filter(flight => flight.go && flight.back);
+        shuffle(roundTripFlights);
+        roundTripFlights = roundTripFlights.slice(0, 3);
+
+        let oneWayFlights = [];
+        const selectedAirlines = new Set();
+
+        shuffle(flightData.flightproduct);
+
+        for (let flight of flightData.flightproduct) {
+            if (flight.go && !selectedAirlines.has(flight.go.airline)) {
+                selectedAirlines.add(flight.go.airline);
+                oneWayFlights.push({ go: flight.go });
+            }
+            if (oneWayFlights.length === 2) break;
+        }
+
+        const selectedFlights = [...roundTripFlights, ...oneWayFlights];
+
+        // ✅ 항공권 HTML 생성 함수
+        function getFlightHTML(flight) {
+            const goAirlineInfo = flightData.airways[flight.go.airline];
+            const backAirlineInfo = flight.back ? flightData.airways[flight.back.airline] : null;
+
+            let totalPrice = (parseInt(flight.go.price.replace(/,/g, ""), 10) || 0) +
+                            (flight.back ? parseInt(flight.back.price.replace(/,/g, ""), 10) || 0 : 0);
+            totalPrice = totalPrice.toLocaleString();
+
+            return `
+            <div class="plane_section_time d-flex justify-content-between gap-5">
+                <div class="planeLogo_wrap d-flex align-items-center gap-1">
+                    <img src="${goAirlineInfo.logo}" alt="${goAirlineInfo.name}" class="planeLogo">
+                    <span class="airline_name">${goAirlineInfo.name}</span>
+                </div>
+                <div class="d-flex gap-5">
+                    <div class="plane_time d-flex flex-column align-items-end gap-1">
+                        <p>${flight.go.depTime}</p>
+                        <p class="airport">${flight.go.depLoc}</p>
+                    </div>
+                    <div class="flight-time d-flex flex-column align-items-center gap-1">
+                        <p>소요시간 n시간</p>
+                        <div class ="arrow-right"></div>
+                        <p>직항</p>
+                    </div>
+                    <div class="plane_time d-flex flex-column align-items-end gap-1">
+                        <p>${flight.go.arrTime}</p>
+                        <p class="airport">${flight.go.arrLoc}</p>                    
+                    </div>
+                </div>
+            </div>    
+                ${flight.back ? `
+                <li class="d-flex justify-content-between gap-5">    
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="${backAirlineInfo.logo}" alt="${backAirlineInfo.name}" class="planeLogo">
+                        <span class="airline_name">${backAirlineInfo.name}</span>
+                    </div>    
+                    <div class="d-flex gap-5">
+                        <div class="plane_time d-flex flex-column align-items-end gap-1">
+                            <p>${flight.back.depTime}</p>
+                            <p>${flight.back.depLoc}</p>
+                        </div>
+                        <div class="flight-time d-flex flex-column align-items-center gap-1">
+                            <p>소요시간 n시간</p>
+                            <div class ="arrow-right"></div>
+                            <p>직항</p>
+                        </div>
+                        <div class="plane_time d-flex flex-column align-items-end gap-1">    
+                        <p>${flight.back.arrTime}</p>
+                        <p class="airport"> ${flight.back.arrLoc}</p>
+                        </div>
+                    </div>
+                </li>    
+                ` : ""   
+                }
+                <div class="share_heart_group d-flex gap-1">
+                    <button class="share-btn" alt="공유">
+                        <span class="share_icon"></span>
+                    </button>
+                    <button class="heart-btn" alt="찜">
+                        <span class="heart_icon"></span>
+                    </button>
+                </div>   
+                <div class="plane_price">
+                    <p>₩${totalPrice}</p>
+                    <button class="add_plan"><span>계획에 담기</span></button>
+                </div>
+            `;
+        }
+        // ✅ 최종 HTML 생성
+        html = selectedFlights.map(getFlightHTML).join("");
+
+        airplaneArea.innerHTML = html;
+    } catch (error) {
+        console.error("JSON 로딩 오류:", error);
+    }
+});
+    
+    
+    
+    
+    
+    
+    

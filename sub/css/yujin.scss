@@ -1,11 +1,7 @@
 //로그인 페이지
 #userLogin{
-  
-
     .container_m {
-        width: 100%;
         max-width: 400px;
-        margin: 0 auto;
       }      
     h3 {
         text-align: center;
@@ -47,7 +43,7 @@
         text-align: right;
         font-size: 12px;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 25px;
     
         a {
         text-decoration: none;
@@ -61,7 +57,10 @@
             button{
                 width: 100%;
                 padding: 12px 0;
-                font-size: 16px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-weight: bold;
                 border-radius: 5px;
                 background-color: var(--Trip-blue, #0051D3);
                 color: white;
@@ -70,35 +69,94 @@
             a{
                 width: 100%;
                 padding: 12px 0;
-                font-size: 16px;
+                font-size: 18px;
+                font-weight: bold;
                 color: var(--Trip-blue, #0051D3);
                 border: 1px solid var(--Trip-blue, #0051D3);
                 border-radius: 5px;
                 background-color: white;
                 text-align: center;
-                cursor: pointer;}
+                cursor: pointer;
+}
     }
     .sns_login {
-        margin-top: 30px;
-      
-        h4 {
+      margin-top: 30px;
+  
+      h4 {
           font-size: 14px;
-          margin-bottom: 10px;
-        }
-      
-        ul {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+  
+      ul {
           display: flex;
           justify-content: center;
-          gap: 10px;
-      
+          gap: 15px; 
+  
           li {
-            width: 40px;
-            height: 40px;
-            background-color: #f0f0f0;
-            border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 50px; 
+              height: 50px;
+              border-radius: 50%;
+              overflow: hidden;
+              background-color: white; 
+  
+              a {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  height: 100%;
+  
+                  img {
+                      object-fit: contain;
+                  }
+              }
           }
-        }
+  
+          
+          #naver {
+              background-color: #03C75A; 
+              img {
+                  width: 80%; 
+              }
+          }
+  
+      
+          #kakao {
+              background-color: #FEE500; 
+              img {
+                  width: 90%; 
+              }
+          }
+  
+        
+          #facebook { 
+              img {
+                  width: 100%; 
+              }
+          }
+  
+          
+          #google {
+              border: 1px solid #1877F2; 
+              img {
+                  width: 45%; 
+              }
+          }
+  
+         
+          #apple {
+              background-color: black;
+              img {
+                  width: 100%; 
+              }
+          }
       }
+  }
 
 }
 

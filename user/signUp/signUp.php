@@ -2,18 +2,27 @@
     <div class="section_banner">
 
     </div>
-    <div class="form_area container_m">
-        <?php
-            $step = isset($_GET['step']) ? $_GET['step'] : 'setp1';
+    <div class="signup_area container_m">
 
-            if($step == 'step1'){
-                include_once("step1.php");
-    
-            }else if($step == 'step2'){
-    
-                include_once("step2.php");
-            }
-        ?>
+        <div class="signup_tab">
+            <ul class="d-flex justify-content-center gap-2">
+                <li>약관동의</li>
+                <li>정보입력</li>
+            </ul>
+        </div>
+        <form action="/user/signUp/signUpRegister.php" method="post" onsubmit="validateForm(event)">
+            <?php
+                $step = isset($_GET['step']) ? $_GET['step'] : 'setp1';
+
+                if($step == 'step1'){
+                    include_once("step1.php");
+        
+                }else if($step == 'step2'){
+        
+                    include_once("step2.php");
+                }
+            ?>
+        </form>
     </div>
 </section>
 
@@ -33,4 +42,5 @@
             event.preventDefault();
         }
     }
+    
 </script>

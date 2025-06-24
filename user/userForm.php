@@ -14,6 +14,6 @@
         }
 
     ?>
-
+</main>
 
 <?php include_once("../sub/layout/bottom.php"); ?>

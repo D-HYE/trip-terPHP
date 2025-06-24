@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="/sub/css/subglobal.min.css">
     <link rel="stylesheet" href="/sub/css/hyo.min.css">
     <link rel="stylesheet" href="/sub/css/yujin.min.css">
+    <link rel="stylesheet" href="/sub/css/ek.min.css">
     <link rel="stylesheet" href="/sub/css/dahye.min.css">
 
 </head>
@@ -40,7 +41,7 @@
        <header id="hd">
         <div class="header_inner">
             <div id="user" class="trip-bl pc">
-                <div class="py-2 container d-flex justify-content-end">
+                <div class="container d-flex justify-content-end align-items-center">
                     <ul class="d-flex gap-3 align-items-center">
                         <li ><a href="/user/userForm.php" class="text-white">로그인/회원가입</a></li>
                         <li class="support rel"><a href="#none" class="text-white">고객지원
@@ -102,7 +103,7 @@
                 </div>
                 <!-- 로그인 전 -->
             <div id="login" class="d-none">
-                <div class="m-1 ">
+                <div class="m-2 ">
                     <span>
                         로그인/회원가입
                     </span>                
@@ -148,21 +149,22 @@
                             <span class="color-active-blue">MY FEEL:TER</span>
 
                         </li>
-                        <li class="planner"><a class="d-flex align-items-center" href="#none">
+                        <li class="planner"><a class="d-flex align-items-center" href="/page/panmaker.php">
                             <span class="color-active-blue">계획짜기</span>
                         </li>
                     </ul>
                     <div class="d-flex flex-column scroll">
-                        <ul class="d-flex communitymenu flex-wrap">
+                        <!-- <ul class="d-flex communitymenu flex-wrap">
                             <li><a class="mbrecomm" href="">MD추천</a></li>
                             <li><a class="bestreview" href="">BEST 후기</a></li>
-                        </ul>
+                        </ul>-->
                         <ul class="d-flex communitymenu flex-wrap">
-                            <li><a class="planaround" href="">계획 둘러보기</a></li>                        
-                            <li><a class="reviewaround" href="">후기 둘러보기</a></li>
-                            <li><a class="friendfind" href="">동행 구해요</a></li>
+                            <li><a class="planaround" href="/board/triptalk.php?tab=board1">계획 둘러보기</a></li>                        
+                            <li><a class="reviewaround" href="/board/triptalk.php?tab=board2">후기 둘러보기</a></li>
+                            <li><a class="friendfind" href="/board/triptalk.php?tab=findFriend&mode=findFriendList">동행 구해요</a></li>
                         </ul>
                         <ul class="d-flex communitymenu flex-wrap">                        
+                            <li><a class="mbrecomm" href="">MD추천</a></li>                        
                             <li><a class="event" href="">이벤트</a></li>
                         </ul>
 

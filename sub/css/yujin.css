@@ -1,7 +1,5 @@
 #userLogin .container_m {
-  width: 100%;
   max-width: 400px;
-  margin: 0 auto;
 }
 #userLogin h3 {
   text-align: center;
@@ -42,7 +40,7 @@
   text-align: right;
   font-size: 12px;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 #userLogin .findInfo a {
   text-decoration: none;
@@ -56,7 +54,10 @@
 #userLogin .btn_wrap button {
   width: 100%;
   padding: 12px 0;
-  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
   border-radius: 5px;
   background-color: var(--Trip-blue, #0051D3);
   color: white;
@@ -66,7 +67,8 @@
 #userLogin .btn_wrap a {
   width: 100%;
   padding: 12px 0;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   color: var(--Trip-blue, #0051D3);
   border: 1px solid var(--Trip-blue, #0051D3);
   border-radius: 5px;
@@ -79,16 +81,59 @@
 }
 #userLogin .sns_login h4 {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 #userLogin .sns_login ul {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 #userLogin .sns_login ul li {
-  width: 40px;
-  height: 40px;
-  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+#userLogin .sns_login ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#userLogin .sns_login ul li a img {
+  object-fit: contain;
+}
+#userLogin .sns_login ul #naver {
+  background-color: #03C75A;
+}
+#userLogin .sns_login ul #naver img {
+  width: 80%;
+}
+#userLogin .sns_login ul #kakao {
+  background-color: #FEE500;
+}
+#userLogin .sns_login ul #kakao img {
+  width: 90%;
+}
+#userLogin .sns_login ul #facebook img {
+  width: 100%;
+}
+#userLogin .sns_login ul #google {
+  border: 1px solid #1877F2;
+}
+#userLogin .sns_login ul #google img {
+  width: 45%;
+}
+#userLogin .sns_login ul #apple {
+  background-color: black;
+}
+#userLogin .sns_login ul #apple img {
+  width: 100%;
 }

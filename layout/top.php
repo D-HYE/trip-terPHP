@@ -29,6 +29,15 @@
     <link rel="stylesheet" href="/css/yujin.min.css">
     <link rel="stylesheet" href="/css/dahye.min.css">
 
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+        if(!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "128201062bf0d70";
+        if(window.wcs) {
+        wcs_do();
+        }
+    </script>
+
 </head>
 <body>
     
@@ -52,7 +61,7 @@
        <header id="hd">
         <div class="header_inner">
             <div id="user" class="trip-bl pc">
-                <div class="py-2 container d-flex justify-content-end">
+                <div class="py-1 container d-flex justify-content-end">
                     <ul class="d-flex gap-3 align-items-center">
                         <li ><a href="/user/userForm.php" class="text-white">로그인/회원가입</a></li>
                         <li class="support rel"><a href="#none" class="text-white">고객지원
@@ -62,11 +71,12 @@
                                 <li><a href="#none">이용가이드</a></li>
                                 <li><a href="#none">FAQ</a></li>
                                 <li><a href="#none">문의게시판</a></li>
+
                             </ul>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>      
             <div id="gnbbox">
                 <div id="gnb" class="container d-flex justify-content-between align-items-center">
                     <h1 class="logo order-2 mx-auto">
@@ -89,11 +99,11 @@
                         <li class="search">
                             <form action="#none" class="d-flex align-items-center">
                                 <input type="text" class="search-bar pc" name="search" placeholder="눈의 나라 훗카이도로~!">
-                                <input type="image" class="search-icon py-0" src="https://trip-ter.vercel.app/img/icon/search-02.svg" alt="">
+                                <input type="image" class="search-icon py-0" src="https://trip-ter.vercel.app/img/icon/search-02.svg" alt="검색버튼">
                             </form>
                         </li>
                         <li>
-                            <button class="wishlist-btn p-0"><a href="#none"><img src="https://trip-ter.vercel.app/img/icon/heart.svg" alt=""></a></button>
+                            <button class="wishlist-btn p-0"><a href="#none"><img src="https://trip-ter.vercel.app/img/icon/travel_bl.svg" alt="찜"></a></button>
                         </li>
                     </ul>
                 </div>
@@ -101,7 +111,7 @@
                     <!-- resize시 설정 초기화 넣기 지금은 눈가림용~ -->
                     <form action="#none" class=" mb-search d-flex  align-items-center justify-content-end">
                         <input type="text" class="mb-searchbar" name="search" placeholder="눈의 나라 훗카이도로~!">
-                        <input type="image" class="mb-searchicon" src="https://trip-ter.vercel.app/img/icon/search-01.svg" alt="">
+                        <input type="image" class="mb-searchicon" src="https://trip-ter.vercel.app/img/icon/search-01.svg" alt="검색버튼">
                     </form>                       
                 </div>
             </div>
@@ -110,11 +120,11 @@
         <div id="hb-submenu">
             <div id="hb-item" class="d-flex flex-column">
                 <div class="d-flex justify-content-end">
-                    <button class="p16 mx-1" id="allMenuclose"><img src="https://trip-ter.vercel.app/img/icon/x-01.svg" class="d-block" alt=""></button>
+                    <button class="p16 mx-1" id="allMenuclose"><img src="https://trip-ter.vercel.app/img/icon/x-01.svg" class="d-block" alt="닫기버튼"></button>
                 </div>
                 <!-- 로그인 전 -->
             <div id="login" class="d-none">
-                <div class="m-1 ">
+                <div class="m-2 ">
                     <span>
                         로그인/회원가입
                     </span>                
@@ -155,23 +165,29 @@
                 </div>
                 <!-- 메뉴리스트 -->
                 <div id="hb-list" class="d-flex flex-column">
-                    <div class="feelter"><a class="d-flex align-items-center" href="/page/tripRoute.php?tab=myfeelter">
-                        <span class="color-active-blue">MY FEEL:TER 설정</span>
-                        <img class="d-block arrow" src="https://trip-ter.vercel.app/img/icon/arrow-right_bl.svg" alt=""></a>
-                    </div>
+                    
+                    <ul class="tapPart d-flex flex-column">
+                        <li class="feelter"><a class="d-flex align-items-center" href="/page/tripRoute.php?tab=myfeelter">
+                            <span class="color-active-blue">MY FEEL:TER</span>
+
+                        </li>
+                        <li class="planner"><a class="d-flex align-items-center" href="#none">
+                            <span class="color-active-blue">계획짜기</span>
+                        </li>
+                    </ul>
                     <div class="d-flex flex-column scroll">
-                        <ul class="d-flex communitymenu flex-wrap">
+                        <!-- <ul class="d-flex communitymenu flex-wrap">
                             <li><a class="mbrecomm" href="">MD추천</a></li>
                             <li><a class="bestreview" href="">BEST 후기</a></li>
+                        </ul> -->
+                        <ul class="d-flex communitymenu flex-wrap">
+                            <li><a class="planaround" href="/board/triptalk.php?tab=board1">계획 둘러보기</a></li>                        
+                            <li><a class="reviewaround" href="/board/triptalk.php?tab=board2">후기 둘러보기</a></li>
+                            <li><a class="friendfind" href="/board/triptalk.php?tab=findFriend&mode=findFriendList">동행 구해요</a></li>
                         </ul>
                         <ul class="d-flex communitymenu flex-wrap">
-                            <li><a class="planaround" href="">계획 둘러보기</a></li>                        
-                            <li><a class="reviewaround" href="">후기 둘러보기</a></li>
-                            <li><a class="friendfind" href="">동행 구해요</a></li>
-                        </ul>
-                        <ul class="d-flex communitymenu flex-wrap">                        
-                            <li><a class="couponpack color-active-blue" href="">트립터 쿠폰팩</a></li>
-                            <li><a class="thismonths" href="">이달의 기획전</a></li>
+                        <li><a class="mbrecomm" href="">MD추천</a></li>                        
+                            <li><a class="event" href="">이벤트</a></li>
                         </ul>
 
                         <ul id="hb-sublist">  
@@ -195,16 +211,53 @@
                             <li>
                                 <div><a class="" href="">티켓&투어</a></div>
                                 <ul id="ticket" class="sublist d-flex flex-wrap">
+                                    <li><a class="allPass color-active-blue" href="#none">올패스권</a></li>
                                     <li><a href="#none">현지투어</a></li>
                                     <li><a href="#none">테마파크</a></li>
-                                    <li><a href="#none">박물관/미술관</a></li>
-                                    <li><a href="#none">전망대/케이블카</a></li>
-                                    <li><a href="#none">올패스권</a></li>
-                                    <li><a href="#none">유람선/크루즈</a></li>
+                                    <li><a href="#none">전시체험</a></li>
                                     <li><a href="#none">철도여행</a></li>
                                 </ul>
                             </li>
-                            
+                            <li>
+                                <ul>
+                                    <li><a href="#tel:01084896369" onclick="trackAndCall(event, '01084896369')">전화문의</a></li>
+                                    <li><a href="https://map.naver.com/p/search/%ED%95%98%EC%9D%B4%EB%94%94%EB%9D%BC%EC%98%A4/place/653467130?c=15.00,0,0,0,dh&placePath=/booking" 
+                                    target="_blank" rel="noopener" onclick="trackNaverReservation(event)">네이버예약</a></li>
+
+                                    <script type="text/javascript">
+                                        function trackAndCall(event, phoneNumber) {
+                                            // 기본 동작 중단
+                                            event.preventDefault();
+        
+                                            // 데이터 수집 로직
+                                            if (window.wcs) {
+                                                wcs.inflow("http://tripterweb.dothome.co.kr/"); 
+                                                var _conv = {};
+                                                _conv.type = "custom001"; 
+                                                wcs.trans(_conv); // 전환 데이터 전송
+                                            }
+        
+                                            // 전화 연결
+                                            setTimeout(() => {
+                                                window.location.href = `tel:${phoneNumber}`;
+                                            }, 500); // 데이터 전송 후 0.5초 후 전화 연결
+                                        }
+
+                                        function trackNaverReservation(event) {
+                                            event.preventDefault();
+                                            if (window.wcs) {
+                                            wcs.inflow("http://tripterweb.dothome.co.kr/"); 
+                                                var _conv = {};
+                                                _conv.type = "purchase"; // 전환 유형 설정
+                                                wcs.trans(_conv); // 전환 데이터 전송
+                                            }
+                                            window.open("https://map.naver.com/p/search/%ED%95%98%EC%9D%B4%EB%94%94%EB%9D%BC%EC%98%A4/place/653467130?c=15.00,0,0,0,dh&placePath=/booking", "_blank");
+                                        }
+
+                                    </script>
+                                </ul>
+                                
+                            </li>
                         </ul>
                     </div>            
                 </div>

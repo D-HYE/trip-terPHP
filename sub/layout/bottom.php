@@ -42,8 +42,9 @@
 
    
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
-    <script src="https://trip-ter.vercel.app/js/header.js"></script>
-    <script src="https://trip-ter.vercel.app/js/mb_top.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/mb_top.js"></script>
+    <script src="/js/component.js"></script>
    
 </body>
 </html>
